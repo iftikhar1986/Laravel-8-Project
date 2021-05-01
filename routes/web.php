@@ -23,7 +23,7 @@ Route::get('/email/verify', function () {
 })->middleware('auth')->name('verification.notice');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/home', function () {
@@ -98,3 +98,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
     return view('admin.index',);
 })->name('dashboard');
+
+Route::get('/user/logout',[BrandController::class,'logOut'])->name('user.logout');
