@@ -1,6 +1,6 @@
-@extends('admin.admin_master')
+    @extends('admin.admin_master')
 
-@section('admin')
+    @section('admin')
 <div class="row">
     <div class="col-xl-3 col-sm-6">
         <div class="card card-mini mb-4">

@@ -193,12 +193,12 @@
         <footer class="footer mt-auto">
             <div class="copyright bg-white">
                 <p>
-                    &copy; <span id="copy-year">2019</span> Copyright Sleek Dashboard Bootstrap Template by
+                    &copy; <span id="copy-year">2021</span> Copyright by
                     <a
                         class="text-primary"
-                        href="http://www.iamabdus.com/"
+                        href="https://iftikharuddin.tech/"
                         target="_blank"
-                    >Abdus</a
+                    >IFTIKHAR</a
                     >.
                 </p>
             </div>

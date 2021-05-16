@@ -28,9 +28,9 @@
                         Multi Image
                     </x-jet-nav-link>
 
-                    
 
-                    
+
+
                 </div>
             </div>
 
@@ -195,6 +195,8 @@
                                     this.closest('form').submit();">
                         {{ __('Logout') }}
                     </x-jet-responsive-nav-link>
+
+
                 </form>
 
                 <!-- Team Management -->
