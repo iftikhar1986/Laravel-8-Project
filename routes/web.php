@@ -9,6 +9,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\WebController;
 use App\Models\Multipic;
+use App\Http\Controllers\ChangePass;
+
 
 use App\Models\User;  //Using Eloquent ORM Read Users Data
 use Illuminate\Support\Facades\DB;  //Query Builder Read Users Data
@@ -157,3 +159,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/user/logout',[BrandController::class,'logOut'])->name('user.logout');
+
+
+
+/* Change Password and User Profile */
+
+Route::get('/user/password',[ChangePass::class,'changePassword'])->name('change.password');
+Route::post('/password/update',[ChangePass::class,'updatePassword'])->name('password.update');
+
+
