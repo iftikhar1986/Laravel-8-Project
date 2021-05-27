@@ -13,7 +13,7 @@
             </div>
         @endif
         <div class="card-body">
-            <form method="post" action="{{ route('update.user.profile') }}" class="form-pill">
+            <form method="post" action="{{ route('update.user.profile') }}" enctype="multipart/form-data" class="form-pill">
                 @csrf
                 <div class="form-group">
                     <label for="exampleFormControlPassword3">User Name</label>
@@ -27,7 +27,7 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlPassword3">User Image</label>
-                    <input type="file" name="image" class="form-control" value="{{ $user->profile_photo_path }}" >
+                    <input type="file" name="image" class="form-control" >
                 </div>
 
                 <div class="form-footer pt-4 pt-5 mt-4 border-top">

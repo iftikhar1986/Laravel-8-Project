@@ -50,8 +50,8 @@ class ChangePass extends Controller
          if($user){
              $user->name = $request['name'];
              $user->email = $request['email'];
-            $user->profile_photo_path = $request['profile_photo_path'];
-            //$user->profile_photo_path  = $request->profile_photo_path->store('public/profile-photos', 'public');
+            //$user->profile_photo_path = $request['profile_photo_path'];
+            $user->profile_photo_path  = $request->image->store('public/profile-photos', 'public');
 
              $user->save();
              return redirect()->back()->with('success','Updated Successfully');
